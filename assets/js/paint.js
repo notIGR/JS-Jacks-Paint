@@ -1,22 +1,26 @@
 const configureListeners = () => {
-    const images = document.querySelectorAll("img") // select img elements  
+    const images = document.querySelectorAll("img") 
     const imagesArry = Array.from(images);
 console.log(imagesArry)
      for (var i = 0; i < images.length; i++) { 
          document.getElementById(imagesArry[i].id).addEventListener('mouseover', addOpacity, false)
          document.getElementById(imagesArry[i].id).addEventListener('mouseout',removeOpacity,false)       
-        // iterate over images and add mouseover event listeners      
+       
     } 
 }
 
 const addOpacity = (event) => {
-
-    // add appropriate CSS class
+if (!this.classList.contains('dim')){ //dim is selected in CSS but not added in the HTML page. adding a class
+    this.classList.add('dim')
+}
     getProductInfo(event.target.id);     
 }
 
 const removeOpacity = (event) => {
-     //remove appropriate CSS class
+    if (this.classList.contains('dim')) {
+        this.classList.remove('dim')
+    }
+
 
     let element = document.getElementById('color-price');
         element.textContent = '';

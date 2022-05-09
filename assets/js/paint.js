@@ -1,4 +1,4 @@
-function configureListeners() {
+const configureListeners = () => {
     let images = // select img elements  
 
 
@@ -7,12 +7,12 @@ function configureListeners() {
     } 
 }
 
-function addOpacity(event) {
+const addOpacity = (event) => {
     // add appropriate CSS class
     getProductInfo(event.target.id);     
 }
 
-function removeOpacity(event) {
+const removeOpacity = (event) => {
      //remove appropriate CSS class
 
     let element = document.getElementById('color-price');
@@ -24,7 +24,7 @@ function removeOpacity(event) {
     event.preventDefault();    
 }
 
-function getProductInfo(paintColor) {
+const getProductInfo = (paintColor) => {
     let price;
     let colorName;  
     
@@ -59,7 +59,7 @@ function getProductInfo(paintColor) {
           default:              
     }
 
-    function updatePrice(colorName, price)
+    const updatePrice = (colorName, price) =>
     {       
         let colorPrice = // select element with corresponding id
         // display price

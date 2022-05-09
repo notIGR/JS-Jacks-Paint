@@ -37,54 +37,54 @@ const getProductInfo = (paintColor) => {
     
     switch (paintColor) {
         case 'pn1':
-            price = ""
-            colorName =""
-            newPrice()                
+            price = "$14.99"
+            colorName ="LimeGreen"
+            updatePrice(colorName, price)                
             break;           
         case 'pn2':
-            price = ""
-            colorName =""
-            newPrice()     
+            price = "$11.14"
+            colorName ="MediumBrown"
+            updatePrice(colorName, price)     
             break;            
         case 'pn3':
-            price = ""
-            colorName =""
-            newPrice()   
+            price = "$22.99"
+            colorName ="RoyalBlue"
+            updatePrice(colorName, price)   
             break;   
         case 'pn4':
-            price = ""
-            colorName =""
-            newPrice()   
+            price = "$4.99"
+            colorName ="SolidBlack"
+            updatePrice(colorName, price)   
             break;   
         case 'pn5':
-            price = ""
-            colorName =""
-            newPrice()        
+            price = "$8.22"
+            colorName ="SolidCyan"
+            updatePrice(colorName, price)        
             break;   
         case 'pn6':
-            price = ""
-            colorName =""
-            newPrice()         
+            price = "$11.99"
+            colorName ="SolidPurple"
+            updatePrice(colorName, price)         
             break;   
         case 'pn7':
-            price = ""
-            colorName =""
-            newPrice()  
+            price = "$13.42"
+            colorName ="SolidRed"
+            updatePrice(colorName, price)  
             break;   
         case 'pn8':
-            price = ""
-            colorName =""
-            newPrice()    
+            price = "$21.98"
+            colorName ="SolidWhite"
+            updatePrice(colorName, price)    
             break;   
         case 'pn9':
-            price = ""
-            colorName =""
-            newPrice()  
+            price = "$14.99"
+            colorName ="SolidYellow"
+            updatePrice(colorName, price)  
             break;   
           default:              
     }
 
-    const updatePrice = (colorName, price) =>
+    const updatePrice = (colorName, price) => 
     {       
         let colorPrice = // select element with corresponding id
         // display price

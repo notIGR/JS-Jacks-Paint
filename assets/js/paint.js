@@ -36,32 +36,50 @@ const getProductInfo = (paintColor) => {
     let colorName;  
     
     switch (paintColor) {
-        case 'pn1':           
-            // set variables for price and color name and invoke a function to update the price     
+        case 'pn1':
+            price = ""
+            colorName =""
+            newPrice()                
             break;           
         case 'pn2':
-            // set variables for price and color name and invoke a function to update the price    
+            price = ""
+            colorName =""
+            newPrice()     
             break;            
         case 'pn3':
-            // set variables for price and color name and invoke a function to update the price  
+            price = ""
+            colorName =""
+            newPrice()   
             break;   
         case 'pn4':
-            // set variables for price and color name and invoke a function to update the price  
+            price = ""
+            colorName =""
+            newPrice()   
             break;   
         case 'pn5':
-            // set variables for price and color name and invoke a function to update the price       
+            price = ""
+            colorName =""
+            newPrice()        
             break;   
         case 'pn6':
-            // set variables for price and color name and invoke a function to update the price        
+            price = ""
+            colorName =""
+            newPrice()         
             break;   
         case 'pn7':
-            // set variables for price and color name and invoke a function to update the price 
+            price = ""
+            colorName =""
+            newPrice()  
             break;   
         case 'pn8':
-            // set variables for price and color name and invoke a function to update the price   
+            price = ""
+            colorName =""
+            newPrice()    
             break;   
         case 'pn9':
-            // set variables for price and color name and invoke a function to update the price 
+            price = ""
+            colorName =""
+            newPrice()  
             break;   
           default:              
     }

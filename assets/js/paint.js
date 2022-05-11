@@ -33,6 +33,14 @@ const removeOpacity = (event) => {
   event.preventDefault();
 };
 
+const updatePrice = (colorName, price) => {
+  const colorPrice = document.getElementById("color-price");
+  colorPrice.textContent = price;
+
+  const color = document.getElementById("color-name");
+  color.textContent = colorName;
+};
+
 const getProductInfo = (paintColor) => {
   let price;
   let colorName;
@@ -85,12 +93,4 @@ const getProductInfo = (paintColor) => {
       break;
     default:
   }
-
-  const updatePrice = (colorName, price) => {
-    const colorPrice = document.getElementById("color-price");
-    colorPrice.textContent = price;
-
-    const color = document.getElementById("color-name");
-    color.textContent = colorName;
-  };
 };

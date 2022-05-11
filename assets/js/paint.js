@@ -13,15 +13,15 @@ const configureListeners = () => {
 };
 
 const addOpacity = (event) => {
-  if(!this.classList.contains('dim'))  {
-    this.classList.add('dim');
+  if (!event.target.classList.contains("dim")) {
+    event.target.classList.add("dim");
   }
   getProductInfo(event.target.id);
 };
 
 const removeOpacity = (event) => {
-  if(this.classList.contains('dim'))  {
-    this.classList.remove('dim');
+  if (event.target.classList.contains("dim")) {
+    event.target.classList.remove("dim");
   }
 
   let element = document.getElementById("color-price");
@@ -88,9 +88,9 @@ const getProductInfo = (paintColor) => {
 
   const updatePrice = (colorName, price) => {
     const colorPrice = document.getElementById("color-price");
-    colorPrice.textContent = price; 
+    colorPrice.textContent = price;
 
     const color = document.getElementById("color-name");
-    color.textContent = colorName; 
+    color.textContent = colorName;
   };
 };

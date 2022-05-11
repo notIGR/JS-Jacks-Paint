@@ -1,7 +1,6 @@
 const configureListeners = () => {
   const images = document.querySelectorAll("img");
   const imagesArry = Array.from(images);
-  console.log(imagesArry);
   for (var i = 0; i < images.length; i++) {
     document
       .getElementById(imagesArry[i].id)
